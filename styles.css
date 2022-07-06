@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+.header {
+  align-items: center;
+  background-color: #FFAFCC;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+.header__img {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.row-main-content {
+  background: linear-gradient(#FFAFCC, #CDB4DB);
+  min-height: calc(100vh - 200px);
+}
+
+
+.main-card{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-card-item{
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(250 50 64 / 50%);
+  border-style: outset;
+  border-width: 2px;
+  height: 4rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.grid-card-item:hover {
+  background-color: rgb(255, 240, 248);
+}
+
+.all-content-card{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.list-item{
+  text-decoration:none;
+}
+span.link-title:hover {
+  color: rgb(255, 38, 0);
+}
+.link-content{
+  padding-left: 12px;
+}
+
+.link-content .link-title {
+  transition: all .3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(38 50 56);
+  font-weight: bolder;
+}
+.link-content .link-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  top: 1px;
+  z-index: 10;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:  rgba(250, 50, 63, 0.908);;
+}
+
+.links-notice18__text{
+  margin-left: 15px;
+  font-weight: 700;
+  color: rgb(0 0 255);
+}
+
+@media (min-width: 640px) {
+  .main-card {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-card {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-card  {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.footer{
+  background-color: #CDB4DB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a{
+  color: black;
+  cursor: pointer;
+  font-size: 14px; 
+  padding: 10px;
+  text-decoration:none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
