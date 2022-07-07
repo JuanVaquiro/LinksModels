@@ -3,21 +3,35 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+.title-main { 
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 64px; 
+  font-weight: 700; 
+  line-height: 64px; 
+  margin: 0 0 0; 
+  padding: 20px 30px; 
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
 .header {
-  background-color: #FFAFCC;
+  /* background-color: #FFAFCC; */
   color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.title-main{
-  font-size: 3.75rem/* 60px */;
+/* .title-main{
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
   text-align: center;
   color: black;
-}
+} */
 
 .text-main{
   font-size: 1rem/* 16px */;
@@ -93,7 +107,7 @@ body {
 
 
 .row-main-content {
-  background: linear-gradient(#FFAFCC, #CDB4DB);
+  /* background: linear-gradient(#FFAFCC, #CDB4DB); */
   min-height: calc(100vh - 200px);
 }
 
@@ -107,7 +121,7 @@ body {
 }
 
 .grid-card-item{
-  background-color: white;
+  background-color: rgb(255 200 221 / 27%);
   border-radius: 10px;
   border-color: rgb(250 50 64 / 50%);
   border-style: outset;
@@ -119,7 +133,7 @@ body {
 }
 
 .grid-card-item:hover {
-  background-color: rgb(255, 240, 248);
+  background-color: rgb(250, 215, 234);
 }
 
 .all-content-card{
@@ -156,7 +170,7 @@ span.link-title:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color:  rgba(250, 50, 63, 0.908);;
+  color:  rgb(255 38 0);
 }
 
 .links-notice18__text{
@@ -186,11 +200,12 @@ span.link-title:hover {
 @media (min-width: 1280px) {
   .main-card  {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+      width: 45%;
   }
 }
 
 .footer{
-  background-color: #CDB4DB;
+  /* background-color: #CDB4DB; */
   display: flex;
   align-items: center;
   justify-content: center;
