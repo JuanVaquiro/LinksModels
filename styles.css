@@ -2,26 +2,100 @@ body {
   margin: 0;
   font-family: 'Muli', sans-serif;
 }
+
 .header {
-  align-items: center;
   background-color: #FFAFCC;
   color: white;
   display: flex;
-  height: 100px;
-  justify-content: space-between;
-  top: 0px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-main{
+  font-size: 3.75rem/* 60px */;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.text-main{
+  font-size: 1rem/* 16px */;
+  line-height: 1.5rem/* 24px */;
+  text-align: center;
+  color: black;
+}
+.conten-text-hd{
   width: 100%;
 }
-.header__img {
-  margin-left: 30px;
-  width: 200px;
+.container-img-profile{
+  padding-left: 1rem/* 16px */;
+  padding-right: 1rem/* 16px */;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
+.sub-container-block-img{
+  margin-top: 6rem
+}
+.sub-block-img{
+  display: flex;
+  align-items: flex-end;
+}
+.sub-block-img__2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1.5rem/* 24px */;
+  margin-bottom: 1.5rem/* 24px */;
+
+}
+.sub__2-container-block-img{
+  margin-left: 1.5rem/* 24px */;
+}
+
+.subb__2-conainer-2{
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem/* 24px */;
+}
+
+.content-img__1{
+  width: 5rem/* 80px */;
+  height: 5rem/* 80px */;
+  border-radius: 0.5rem/* 8px */;
+  margin-right: 1.5rem/* 24px */;
+}
+.content-img__2{
+  width: 12rem/* 192px */;
+  height: 9rem/* 144px */;
+  border-radius: 0.5rem/* 8px */
+}
+.content-img__3{
+  width: 18rem/* 288px */;
+  height: 20rem/* 320px */;
+  border-radius: 0.5rem/* 8px */;
+}
+.content-img__4{
+  width: 12rem/* 192px */;
+  height: 12rem/* 192px */;
+  border-radius: 0.5rem/* 8px */;
+}
+.content-img__5{
+  width: 5rem/* 80px */;
+  height: 5rem/* 80px */;
+  border-radius: 0.5rem/* 8px */;
+  margin-left: 1.5rem/* 24px */;
+  object-fit: cover;
+}
+
 
 .row-main-content {
   background: linear-gradient(#FFAFCC, #CDB4DB);
   min-height: calc(100vh - 200px);
 }
-
 
 .main-card{
   width: 100%;
@@ -95,6 +169,10 @@ span.link-title:hover {
   .main-card {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       max-width: 640px;
+  }
+
+  .text-main{
+    max-width: 640px;
   }
 }
 
