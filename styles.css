@@ -1,7 +1,17 @@
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
+  /* background: rgb(13 17 23); */
 }
+
+.header {
+  /* background-color: #FFAFCC; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 .title-main { 
   color: #111; 
@@ -16,22 +26,6 @@ body {
   text-decoration: underline;
 }
 
-
-.header {
-  /* background-color: #FFAFCC; */
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* .title-main{
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 700;
-  text-align: center;
-  color: black;
-} */
 
 .text-main{
   font-size: 1rem/* 16px */;
@@ -133,7 +127,7 @@ body {
 }
 
 .grid-card-item:hover {
-  background-color: rgb(250, 215, 234);
+  background-color: rgb(248, 224, 237);
 }
 
 .all-content-card{
@@ -222,4 +216,64 @@ span.link-title:hover {
 
 .footer a:hover{
   text-decoration: underline;
+}
+
+
+.container-btn-mode{
+  position: absolute;
+  top:20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size:0;
+}
+.btn-mode{
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border:2px solid black;
+  transition: background-color .5s;
+}
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-mode.sun{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.active{
+  background-color:black;
+  color:#ffcd5c !important;
+}
+
+.dark-mode{
+  background-color: rgb(13 17 23);
+  transition:background-color .5s;
+}
+.dark-mode .card{
+  background-color: #1A1C1E;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode span, .dark-mode .footer a, .dark-mode .btn-contact{
+  color:white;
+}
+
+.dark-mode .link-title{
+  color: white;
+  font-weight: 500;
+}
+.dark-mode  .grid-card-item:hover{
+  background-color: rgb(255 200 221 / 15%);
+}
+.dark-mode .btn-mode{
+  background-color:#1A1C1E;
+  border:1px solid white;
+  color:white;
 }
