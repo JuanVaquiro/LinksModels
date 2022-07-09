@@ -9,6 +9,62 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+
+/* container main  index */
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+
+.icon-social{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.icon-tele{
+  font-size:40px;
+  padding: 8px; 
+  color: #6baefa;
+}
+.icon-tele:hover{
+  color: skyblue;
+}
+
+.icon-whas{
+  font-size:40px; 
+  padding: 8px; 
+  color:green
+}
+.icon-whas:hover{
+  color: #87fc72;
+}
+
+.icon-insta{
+  font-size:40px; 
+  padding: 8px; 
+  color:darkred;
+}
+.icon-insta:hover{
+  color: #ff6262;
+}
+
+.icon-tik{
+  font-size:40px; 
+  padding: 8px; 
+  color: black;
+}
+.icon-tik:hover{
+  color: dimgray;
+}
+
+
 /* index section IMG */
 .portafolio{
   background: #f2f2f2;
@@ -70,6 +126,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 30px 20px;
+  font-size: 28px;
 }
 /* FIN CSS index img */
 
@@ -241,6 +298,23 @@ span.link-title:hover {
   color: rgb(0 0 255);
 }
 
+@media (max-width: 768px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-log{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .row{
+    width: 90%;
+  }
+}
+
 @media (min-width: 640px) {
   .main-card {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -250,6 +324,7 @@ span.link-title:hover {
   .text-main{
     max-width: 640px;
   }
+  
 }
 
 @media (min-width: 768px) {
